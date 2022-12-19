@@ -1,0 +1,42 @@
+{
+    "name": "nmig",
+    "version": "5.5.0",
+    "description": "The database migration app",
+    "author": "Anatoly Khaytovich<anatolyuss@gmail.com>",
+    "license": "GPL-3.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AnatolyUss/nmig.git"
+    },
+    "engines": {
+        "node": ">=10.0.0"
+    },
+    "dependencies": {
+        "json2csv": "^5.0.3",
+        "mysql": "^2.18.1",
+        "pg": "^8.4.2",
+        "pg-copy-streams": "^5.1.1",
+        "@types/mysql": "^2.15.15",
+        "@types/node": "^14.14.5",
+        "@types/pg": "^7.14.5"
+    },
+    "devDependencies": {
+        "@types/tape": "^4.13.0",
+        "tape": "^5.0.1",
+        "typescript": "^4.0.5"
+    },
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/src/Main.js",
+        "test": "node dist/test/Main.test.js"
+    },
+    "keywords": [
+        "database migration",
+        "copy",
+        "mysql",
+        "mariadb",
+        "postgresql",
+        "postgres",
+        "postgre"
+    ]
+}
